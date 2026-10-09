@@ -1,196 +1,97 @@
 (******************************************************************************)
+(*  Constitution.v                                                            *)
 (*                                                                            *)
-(*                         U.S. CONSTITUTIONAL STRUCTURE                      *)
-(*                                                                            *)
-(*     Enumerated powers of Congress (Art. I § 8), executive authority        *)
-(*     (Art. II), judicial review (Marbury), amendment procedures             *)
-(*     (Art. V), and federalism constraints (10th Amendment).                 *)
-(*                                                                            *)
-(*     "We the People of the United States, in Order to form a more           *)
-(*      perfect Union..."                                                     *)
-(*     - Preamble, 1787                                                       *)
-(*                                                                            *)
-(*     Author: Charles C. Norton                                              *)
-(*     Date: January 6, 2026                                                  *)
-(*     License: MIT                                                           *)
-(*                                                                            *)
+(*  Top level.  The Constitution is a predicate on a World (Constitutional);  *)
+(*  this file states that some World satisfies it, and draws consequences     *)
+(*  from individual clauses that hold for every World satisfying it.          *)
 (******************************************************************************)
 
-Require Import List.
-Require Import Arith.
-Require Import Bool.
+From CV Require Import Types Act Data World Preamble Art1_Congress Art1_Lawmaking
+  Art1_Limits Art2 Art3 Art4 Art5_7 Amend_BoR Amend_11_19 Amend_20_27
+  Constitutional Witness WitnessCheck.
+From Stdlib Require Import List Arith Lia.
 Import ListNotations.
 
-Inductive Branch : Type :=
-  | Legislative
-  | Executive
-  | Judicial.
-
-Inductive Chamber : Type :=
-  | House
-  | Senate.
-
-Record Congress := mkCongress {
-  house_members : nat;
-  senate_members : nat
-}.
-
-Definition standard_congress : Congress :=
-  mkCongress 435 100.
-
-Inductive EnumeratedPower : Type :=
-  | TaxAndSpend
-  | BorrowMoney
-  | RegulateCommerce
-  | EstablishNaturalization
-  | CoinMoney
-  | PunishCounterfeiting
-  | EstablishPostOffices
-  | PromoteScienceArts
-  | ConstituteTribunals
-  | DefinePiracies
-  | DeclareWar
-  | RaiseArmies
-  | ProvideNavy
-  | RegulateForces
-  | CallMilitia
-  | OrganizeMilitia
-  | ExclusiveLegislationDC
-  | NecessaryAndProper.
-
-Definition all_enumerated_powers : list EnumeratedPower :=
-  [ TaxAndSpend; BorrowMoney; RegulateCommerce; EstablishNaturalization;
-    CoinMoney; PunishCounterfeiting; EstablishPostOffices; PromoteScienceArts;
-    ConstituteTribunals; DefinePiracies; DeclareWar; RaiseArmies;
-    ProvideNavy; RegulateForces; CallMilitia; OrganizeMilitia;
-    ExclusiveLegislationDC; NecessaryAndProper ].
-
-Definition enumerated_power_count : nat := length all_enumerated_powers.
-
-Lemma eighteen_enumerated_powers : enumerated_power_count = 18.
+(* The Constitution is satisfiable: the witness World meets every clause. *)
+Theorem constitution_satisfiable : exists w : World, Constitutional w.
 Proof.
-  reflexivity.
+  exists witness_world. exact witness_constitutional.
 Qed.
 
-Definition two_thirds (total : nat) : nat := (2 * total + 2) / 3.
-
-Definition veto_override_threshold (c : Congress) : nat :=
-  two_thirds (house_members c) + two_thirds (senate_members c).
-
-Definition house_override : nat := two_thirds 435.
-Definition senate_override : nat := two_thirds 100.
-
-Lemma house_two_thirds_is_290 : house_override = 290.
+(* Art. I, s. 7, cl. 2: every enacted measure passed both Houses and was presented
+   to the President. *)
+Theorem enacted_law_passed_both_houses :
+  forall w, Constitutional w ->
+  forall m, In (EnactLaw m) (w_acts w) -> passed_both m /\ m.(m_presented) = true.
 Proof.
-  reflexivity.
+  intros w H m Hm.
+  assert (H72 : I_7_2 w) by (unfold Constitutional in H; decompose [and] H; assumption).
+  unfold I_7_2, forall_laws, forall_acts in H72.
+  specialize (H72 (EnactLaw m) Hm). simpl in H72.
+  destruct H72 as [_ [Hp Hpres]]. split; assumption.
 Qed.
 
-Lemma senate_two_thirds_is_67 : senate_override = 67.
+(* Art. I, s. 7, cl. 2: a vetoed measure that became law was passed over by two
+   thirds of each House. *)
+Theorem vetoed_law_overridden :
+  forall w, Constitutional w ->
+  forall m, In (EnactLaw m) (w_acts w) -> m.(m_action) = Vetoed -> overridden m.
 Proof.
-  reflexivity.
+  intros w H m Hm Hv.
+  assert (H73 : I_7_3 w) by (unfold Constitutional in H; decompose [and] H; assumption).
+  unfold I_7_3, forall_laws, forall_acts in H73.
+  specialize (H73 (EnactLaw m) Hm). simpl in H73.
+  apply H73. exact Hv.
 Qed.
 
-Definition total_states : nat := 50.
-
-Definition three_fourths_states : nat := (3 * total_states + 3) / 4.
-
-Lemma amendment_ratification_requires_38 : three_fourths_states = 38.
+(* Article V: an amendment is ratified only by three fourths of the States. *)
+Theorem ratification_three_fourths :
+  forall w, Constitutional w ->
+  forall n s mode y, In (RatifyAmendment n s mode y) (w_acts w) -> three_fourths_of_states s.
 Proof.
-  reflexivity.
+  intros w H n s mode y Hn.
+  assert (HV2 : V_2 w) by (unfold Constitutional in H; decompose [and] H; assumption).
+  unfold V_2, forall_acts in HV2.
+  specialize (HV2 (RatifyAmendment n s mode y) Hn). simpl in HV2. exact HV2.
 Qed.
 
-Inductive AmendmentPath : Type :=
-  | CongressProposal
-  | ConventionProposal.
-
-Inductive RatificationMethod : Type :=
-  | StateLegislatures
-  | StateConventions.
-
-Record AmendmentProcess := mkAmendmentProcess {
-  proposal_path : AmendmentPath;
-  ratification_method : RatificationMethod;
-  states_required : nat
-}.
-
-Definition standard_amendment : AmendmentProcess :=
-  mkAmendmentProcess CongressProposal StateLegislatures 38.
-
-Inductive JudicialReviewOutcome : Type :=
-  | Constitutional
-  | Unconstitutional
-  | StandingDenied
-  | Moot
-  | PoliticalQuestion.
-
-Definition is_justiciable (outcome : JudicialReviewOutcome) : bool :=
-  match outcome with
-  | Constitutional => true
-  | Unconstitutional => true
-  | StandingDenied => false
-  | Moot => false
-  | PoliticalQuestion => false
-  end.
-
-Inductive PowerHolder : Type :=
-  | Federal
-  | State
-  | Reserved.
-
-Definition tenth_amendment_analysis (power_enumerated : bool) (power_prohibited_to_states : bool) : PowerHolder :=
-  if power_enumerated then Federal
-  else if power_prohibited_to_states then Federal
-  else Reserved.
-
-Lemma unenumerated_unpermitted_reserved :
-  forall pe ps, pe = false -> ps = false -> tenth_amendment_analysis pe ps = Reserved.
+(* Art. I, s. 9, cl. 3: no enacted measure is a bill of attainder or ex post facto law. *)
+Theorem enacted_law_not_attainder :
+  forall w, Constitutional w ->
+  forall m, In (EnactLaw m) (w_acts w) -> ~ In Attainder (m_features m).
 Proof.
-  intros pe ps Hpe Hps.
-  unfold tenth_amendment_analysis.
-  rewrite Hpe. rewrite Hps.
-  reflexivity.
+  intros w H m Hm.
+  assert (H93 : I_9_3 w) by (unfold Constitutional in H; decompose [and] H; assumption).
+  unfold I_9_3, forall_laws, forall_acts in H93.
+  specialize (H93 (EnactLaw m) Hm). simpl in H93. exact (proj1 H93).
 Qed.
 
-Inductive SupremacyResolution : Type :=
-  | FederalPrevails
-  | StateLawValid
-  | NoConflict.
-
-Definition supremacy_clause (federal_law_exists : bool) (state_law_conflicts : bool) : SupremacyResolution :=
-  if federal_law_exists then
-    if state_law_conflicts then FederalPrevails
-    else NoConflict
-  else StateLawValid.
-
-Lemma federal_preempts_conflicting_state :
-  supremacy_clause true true = FederalPrevails.
+(* Art. II, s. 1, cl. 5 and Amendment XXII, s. 1: a registered presidential candidate
+   is eligible under both rules. *)
+Theorem registered_candidate_eligible :
+  forall w, Constitutional w ->
+  forall p, In (CandidateRegistration p) (w_acts w) ->
+  eligible_for_president p /\ eligible_after_22 p.
 Proof.
-  reflexivity.
+  intros w H p Hp.
+  assert (H17 : II_1_7 w) by (unfold Constitutional in H; decompose [and] H; assumption).
+  assert (H221 : A22_s1 w) by (unfold Constitutional in H; decompose [and] H; assumption).
+  unfold II_1_7, A22_s1, forall_acts in H17, H221.
+  split.
+  - exact (H17 (CandidateRegistration p) Hp).
+  - exact (H221 (CandidateRegistration p) Hp).
 Qed.
 
-Definition electoral_votes (state_house_seats : nat) : nat :=
-  state_house_seats + 2.
-
-Definition total_electoral_votes : nat := 435 + 100 + 3.
-
-Definition electoral_majority : nat := (total_electoral_votes / 2) + 1.
-
-Lemma electoral_college_majority_is_270 : electoral_majority = 270.
+(* Amendment XXV, s. 1: absent an inability and a vacancy in the Vice Presidency,
+   the Vice President succeeds the President. *)
+Theorem succession_by_vice_president :
+  forall w, Constitutional w ->
+  forall t s, In (Succession t s false) (w_acts w) -> t <> TriggerInability ->
+  s = SuccessorVicePresident.
 Proof.
-  reflexivity.
-Qed.
-
-Inductive ImpeachmentStage : Type :=
-  | HouseInvestigation
-  | HouseVote
-  | SenateTrialPending
-  | SenateTrialActive
-  | Acquitted
-  | Convicted.
-
-Definition impeachment_conviction_threshold : nat := two_thirds 100.
-
-Lemma conviction_requires_67_senators : impeachment_conviction_threshold = 67.
-Proof.
-  reflexivity.
+  intros w H t s Hs Ht.
+  assert (HA : A25_s1 w) by (unfold Constitutional in H; decompose [and] H; assumption).
+  unfold A25_s1, forall_acts in HA.
+  specialize (HA (Succession t s false) Hs). simpl in HA.
+  exact (HA Ht eq_refl).
 Qed.

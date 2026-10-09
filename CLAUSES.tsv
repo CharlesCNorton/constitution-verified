@@ -1,0 +1,196 @@
+id	citation	summary	kind
+P_1	Preamble	six declared purposes of the Constitution	D
+I_1_1	Art. I, s. 1	legislative powers vested in Congress: Senate and House of Representatives	S
+I_2_1	Art. I, s. 2, cl. 1	House chosen every second year by the people of the several States	S
+I_2_2	Art. I, s. 2, cl. 1	electors of Representatives have the qualifications of the most numerous branch of the State legislature	S
+I_2_3	Art. I, s. 2, cl. 2	Representative: age 25, seven years a citizen, inhabitant of the State when elected	A
+I_2_4	Art. I, s. 2, cl. 3	enumeration within three years of first meeting and every ten years thereafter	S
+I_2_5	Art. I, s. 2, cl. 3	apportionment with three fifths of other persons (superseded by Amendment XIV, s. 2)	D
+I_2_6	Art. I, s. 2, cl. 3	Representatives not exceed one per thirty thousand; each State at least one	S
+I_2_7	Art. I, s. 2, cl. 3	interim apportionment of sixty-five Representatives until the first enumeration	D
+I_2_8	Art. I, s. 2, cl. 4	vacancies filled by writs of election issued by the executive of the State	A
+I_2_9	Art. I, s. 2, cl. 5	House chooses its Speaker and other officers	S
+I_2_10	Art. I, s. 2, cl. 5	House has the sole power of impeachment	A
+I_3_1	Art. I, s. 3, cl. 1	two Senators from each State, for six years, one vote each	S
+I_3_2	Art. I, s. 3, cl. 2	Senate divided as equally as may be into three classes; one third chosen every second year	S
+I_3_3	Art. I, s. 3, cl. 2	recess vacancies filled by temporary appointment of the State executive (modified by Amendment XVII, s. 2)	D
+I_3_4	Art. I, s. 3, cl. 3	Senator: age 30, nine years a citizen, inhabitant of the State when elected	A
+I_3_5	Art. I, s. 3, cl. 4	Vice President presides over the Senate and votes only when equally divided	A
+I_3_6	Art. I, s. 3, cl. 5	Senate chooses its other officers and a President pro tempore	S
+I_3_7	Art. I, s. 3, cl. 6	Senate tries impeachments under oath; Chief Justice presides over the trial of the President; conviction requires two thirds of the Members present	A
+I_3_8	Art. I, s. 3, cl. 7	judgment in impeachment limited to removal and disqualification; conviction does not bar prosecution	A
+I_4_1	Art. I, s. 4, cl. 1	times, places and manner of elections prescribed by the State legislature; Congress may alter them, except the places of choosing Senators	A
+I_4_2	Art. I, s. 4, cl. 2	Congress assembles at least once a year, on the first Monday in December unless it appoints another day by law (modified by Amendment XX, s. 2)	S
+I_5_1	Art. I, s. 5, cl. 1	each House judges its own elections, returns and qualifications; a majority is a quorum; a smaller number may adjourn and compel attendance	A
+I_5_2	Art. I, s. 5, cl. 2	each House determines its rules, punishes Members, and expels a Member with two thirds concurring	A
+I_5_3	Art. I, s. 5, cl. 3	each House keeps a journal; yeas and nays entered at the desire of one fifth of those present	A
+I_5_4	Art. I, s. 5, cl. 4	neither House adjourns more than three days, or elsewhere, without the other's consent	A
+I_6_1	Art. I, s. 6, cl. 1	compensation set by law and paid from the Treasury	A
+I_6_2	Art. I, s. 6, cl. 1	privilege from arrest except for treason, felony and breach of the peace	A
+I_6_3	Art. I, s. 6, cl. 1	no questioning for speech or debate in any other place	A
+I_6_4	Art. I, s. 6, cl. 2	no Member appointed to a civil office created or with emoluments increased during the Member's term	A
+I_6_5	Art. I, s. 6, cl. 2	no holder of federal office may be a Member during continuance in office	A
+I_7_1	Art. I, s. 7, cl. 1	revenue bills originate in the House; the Senate may propose or concur with amendments	A
+I_7_2	Art. I, s. 7, cl. 2	bill passed by both Houses presented to the President; signed, or returned with objections and passed over by two thirds of each House	A
+I_7_3	Art. I, s. 7, cl. 2	votes on a returned bill determined by yeas and nays, names entered on each Journal	A
+I_7_4	Art. I, s. 7, cl. 2	bill not returned within ten days (Sundays excepted) becomes law, unless adjournment prevents its return	A
+I_7_5	Art. I, s. 7, cl. 3	orders, resolutions and votes requiring concurrence presented to the President; disapproval overridden by two thirds of each House	A
+I_8_1	Art. I, s. 8, cl. 1	taxes, duties, imposts and excises to pay debts and provide for defence and welfare, uniform throughout the United States	A
+I_8_2	Art. I, s. 8, cl. 2	power to borrow money on the credit of the United States	A
+I_8_3	Art. I, s. 8, cl. 3	power to regulate commerce with foreign nations, among the States, and with the Indian tribes	A
+I_8_4	Art. I, s. 8, cl. 4	uniform rule of naturalization and uniform laws on bankruptcies	A
+I_8_5	Art. I, s. 8, cl. 5	power to coin money, regulate its value, and fix weights and measures	A
+I_8_6	Art. I, s. 8, cl. 6	power to punish counterfeiting of securities and coin	A
+I_8_7	Art. I, s. 8, cl. 7	power to establish post offices and post roads	A
+I_8_8	Art. I, s. 8, cl. 8	power to secure for limited times exclusive rights of authors and inventors	A
+I_8_9	Art. I, s. 8, cl. 9	power to constitute tribunals inferior to the Supreme Court	A
+I_8_10	Art. I, s. 8, cl. 10	power to define and punish piracies, felonies on the high seas, and offences against the law of nations	A
+I_8_11	Art. I, s. 8, cl. 11	power to declare war, grant letters of marque and reprisal, and make rules on captures	A
+I_8_12	Art. I, s. 8, cl. 12	power to raise and support armies; no appropriation for that use for longer than two years	A
+I_8_13	Art. I, s. 8, cl. 13	power to provide and maintain a navy	A
+I_8_14	Art. I, s. 8, cl. 14	power to make rules for the government and regulation of the land and naval forces	A
+I_8_15	Art. I, s. 8, cl. 15	power to call forth the militia to execute the laws, suppress insurrections and repel invasions	A
+I_8_16	Art. I, s. 8, cl. 16	power to organize, arm and discipline the militia; officers appointed by the States; training per Congress's discipline	A
+I_8_17	Art. I, s. 8, cl. 17	exclusive legislation over the seat of government (not exceeding ten miles square) and over places purchased for forts and other buildings	A
+I_8_18	Art. I, s. 8, cl. 18	power to make all laws necessary and proper for executing the enumerated powers	A
+I_9_1	Art. I, s. 9, cl. 1	migration or importation not prohibited by Congress before 1808; tax of not more than ten dollars per person	A
+I_9_2	Art. I, s. 9, cl. 2	habeas corpus suspended only in cases of rebellion or invasion when public safety requires	A
+I_9_3	Art. I, s. 9, cl. 3	no bill of attainder or ex post facto law	A
+I_9_4	Art. I, s. 9, cl. 4	no capitation or other direct tax unless in proportion to the census (income taxes excepted by Amendment XVI)	A
+I_9_5	Art. I, s. 9, cl. 5	no tax or duty on articles exported from any State	A
+I_9_6	Art. I, s. 9, cl. 6	no preference among the ports of the States; vessels not obliged to enter, clear or pay duties in another State	A
+I_9_7	Art. I, s. 9, cl. 7	money drawn from the Treasury only under appropriation by law; regular statement and account of public money published	A
+I_9_8	Art. I, s. 9, cl. 8	no title of nobility granted by the United States; no office holder accepts a foreign present, office or title without Congress's consent	A
+I_10_1	Art. I, s. 10, cl. 1	States may not make treaties, alliances or confederations, grant marque and reprisal, coin money, emit bills of credit, make non-specie tender, pass attainder or ex post facto laws, impair contracts, or grant titles of nobility	A
+I_10_2	Art. I, s. 10, cl. 2	State import and export duties need Congress's consent, are limited to inspection needs, go to the Treasury, and are subject to Congress's revision	A
+I_10_3	Art. I, s. 10, cl. 3	State tonnage duties, peacetime troops or warships, and compacts need Congress's consent; war only when invaded or in imminent danger	A
+II_1_1	Art. II, s. 1, cl. 1	executive power vested in the President, for a four-year term, elected with the Vice President	S
+II_1_2	Art. II, s. 1, cl. 2	each State appoints electors equal to its Senators and Representatives; no Senator, Representative, or holder of federal office of trust or profit as elector	A
+II_1_3	Art. II, s. 1, cl. 3	electors vote by ballot for two persons, one not an inhabitant of the elector's State; lists sealed to the President of the Senate and counted	A
+II_1_4	Art. II, s. 1, cl. 3	the person with a majority of electors is President; otherwise the House chooses from the five highest (modified by Amendment XII to three)	A
+II_1_5	Art. II, s. 1, cl. 3	the person with a majority of electors is Vice President; ties chosen by the Senate (modified by Amendment XII)	A
+II_1_6	Art. II, s. 1, cl. 4	Congress determines the time of choosing electors and the day of their vote, the same throughout the United States	S
+II_1_7	Art. II, s. 1, cl. 5	President: natural born citizen or citizen at adoption, age 35, fourteen years resident	A
+II_1_8	Art. II, s. 1, cl. 6	succession on removal, death, resignation or inability; Congress may provide by law (modified by Amendment XXV, s. 1)	A
+II_1_9	Art. II, s. 1, cl. 7	President's compensation neither increased nor diminished during the term; no other emolument from the United States or States	A
+II_1_10	Art. II, s. 1, cl. 8	oath or affirmation before entering on the execution of the office	A
+II_2_1	Art. II, s. 2, cl. 1	Commander in Chief; written opinions of department heads; reprieves and pardons except in cases of impeachment	A
+II_2_2	Art. II, s. 2, cl. 2	treaties made with the advice and consent of the Senate, two thirds of the Senators present concurring	A
+II_2_3	Art. II, s. 2, cl. 2	officers appointed with the advice and consent of the Senate, or inferior officers vested by law in the President alone, the courts, or department heads	A
+II_2_4	Art. II, s. 2, cl. 3	recess vacancies filled by commissions expiring at the end of the next session	A
+II_3_1	Art. II, s. 3, cl. 1	information on the State of the Union and recommendation of measures	S
+II_3_2	Art. II, s. 3, cl. 1	President may convene both Houses on extraordinary occasions and adjourn them on disagreement about adjournment	A
+II_3_3	Art. II, s. 3, cl. 1	President receives ambassadors and other public ministers	A
+II_3_4	Art. II, s. 3, cl. 1	President takes care that the laws are faithfully executed and commissions all officers	A
+II_4_1	Art. II, s. 4	removal on impeachment and conviction for treason, bribery, or other high crimes and misdemeanors	A
+III_1_1	Art. III, s. 1	judicial power vested in one Supreme Court and inferior courts	S
+III_1_2	Art. III, s. 1	judges hold office during good behaviour; compensation not diminished during continuance in office	A
+III_2_1	Art. III, s. 2, cl. 1	judicial power extends to the enumerated categories of cases and controversies	A
+III_2_2	Art. III, s. 2, cl. 2	original jurisdiction in cases affecting ambassadors and in cases where a State is a party; appellate jurisdiction otherwise, subject to Congress's exceptions	A
+III_2_3	Art. III, s. 2, cl. 3	trial of crimes, except impeachment, by jury in the State where committed, or at a place Congress directs	A
+III_3_1	Art. III, s. 3, cl. 1	treason consists only in levying war against the United States or adhering to their enemies, giving them aid and comfort	A
+III_3_2	Art. III, s. 3, cl. 1	no treason conviction except on two witnesses to the same overt act, or on confession in open court	A
+III_3_3	Art. III, s. 3, cl. 2	Congress declares the punishment of treason; no corruption of blood or forfeiture beyond the attainted person's life	A
+IV_1_1	Art. IV, s. 1	full faith and credit to the public acts, records and judicial proceedings of every State	A
+IV_2_1	Art. IV, s. 2, cl. 1	citizens of each State entitled to the privileges and immunities of citizens in the several States	A
+IV_2_2	Art. IV, s. 2, cl. 2	persons charged with crime who flee from justice to be delivered up on demand of the executive authority	A
+IV_2_3	Art. IV, s. 2, cl. 3	fugitive service or labour to be delivered up (superseded by Amendment XIII)	D
+IV_3_1	Art. IV, s. 3, cl. 1	new States admitted by Congress; no State formed within another; no merger without the legislatures' and Congress's consent	A
+IV_3_2	Art. IV, s. 3, cl. 2	Congress disposes of the territory and property of the United States	A
+IV_4_1	Art. IV, s. 4	United States guarantees to every State a Republican Form of Government	A
+IV_4_2	Art. IV, s. 4	United States protects each State against invasion	A
+IV_4_3	Art. IV, s. 4	protection against domestic violence on application of the legislature, or of the executive when the legislature cannot be convened	A
+V_1	Art. V	Congress proposes amendments on the vote of two thirds of both Houses, or calls a convention on the application of two thirds of the States	A
+V_2	Art. V	amendments valid when ratified by three fourths of the States, by legislatures or conventions as Congress proposes	A
+V_3	Art. V, proviso	no amendment before 1808 may affect Article I, section 9, clauses 1 and 4	A
+V_4	Art. V, proviso	no State deprived of its equal suffrage in the Senate without its consent	A
+VI_1	Art. VI, cl. 1	debts and engagements before the Constitution valid against the United States under it	A
+VI_2	Art. VI, cl. 2	Constitution, federal laws made in pursuance, and treaties are the supreme law; state law to the contrary notwithstanding	A
+VI_3	Art. VI, cl. 3	Senators, Representatives, State legislators, and executive and judicial officers bound by oath or affirmation to support the Constitution	A
+VI_4	Art. VI, cl. 3	no religious test as a qualification to any office or public trust	A
+VII_1	Art. VII	ratification by nine States sufficient to establish the Constitution between the ratifying States	S
+BR1789_1	Joint resolution of 25 September 1789, first article	apportionment article of the 1789 resolution, not ratified	D
+A1_1	Amendment I	Congress shall make no law respecting an establishment of religion	A
+A1_2	Amendment I	Congress shall make no law prohibiting the free exercise of religion	A
+A1_3	Amendment I	Congress shall make no law abridging the freedom of speech	A
+A1_4	Amendment I	Congress shall make no law abridging the freedom of the press	A
+A1_5	Amendment I	Congress shall make no law abridging the right peaceably to assemble	A
+A1_6	Amendment I	Congress shall make no law abridging the right to petition for redress of grievances	A
+A2_1	Amendment II	the right to keep and bear arms shall not be infringed	A
+A3_1	Amendment III	no soldier quartered in any house in time of peace without the owner's consent	A
+A3_2	Amendment III	in time of war, quartering only in a manner prescribed by law	A
+A4_1	Amendment IV	no unreasonable searches and seizures	A
+A4_2	Amendment IV	warrants issue only on probable cause, supported by oath or affirmation	A
+A4_3	Amendment IV	warrants particularly describe the place to be searched and the persons or things to be seized	A
+A5_1	Amendment V	capital or infamous crime requires a grand jury indictment, except in the land or naval forces or the militia in actual service	A
+A5_2	Amendment V	no person twice put in jeopardy of life or limb for the same offence	A
+A5_3	Amendment V	no person compelled in a criminal case to be a witness against himself	A
+A5_4	Amendment V	no deprivation of life, liberty, or property without due process of law	A
+A5_5	Amendment V	no taking of private property for public use without just compensation	A
+A6_1	Amendment VI	right to a speedy trial	A
+A6_2	Amendment VI	right to a public trial	A
+A6_3	Amendment VI	right to an impartial jury of the State and district, previously ascertained by law	A
+A6_4	Amendment VI	right to be informed of the nature and cause of the accusation	A
+A6_5	Amendment VI	right to be confronted with the witnesses	A
+A6_6	Amendment VI	right to compulsory process for obtaining witnesses	A
+A6_7	Amendment VI	right to the assistance of counsel	A
+A7_1	Amendment VII	jury trial preserved in suits at common law where the value exceeds twenty dollars	A
+A7_2	Amendment VII	no re-examination of jury facts other than according to the common law	A
+A8_1	Amendment VIII	no excessive bail	A
+A8_2	Amendment VIII	no excessive fines	A
+A8_3	Amendment VIII	no cruel and unusual punishments	A
+A9_1	Amendment IX	enumeration of rights shall not deny or disparage others retained by the people	A
+A10_1	Amendment X	powers not delegated nor prohibited to the States are reserved to the States or the people	A
+A11_1	Amendment XI	judicial power does not extend to suits against a State by citizens of another State or of a foreign State	A
+A12_1	Amendment XII	electors vote by separate ballots for President and Vice President; at least one not an inhabitant of the elector's State	A
+A12_2	Amendment XII	President: majority of electors, else the House chooses from the three highest, by States, with quorum and majority of States	A
+A12_3	Amendment XII	Vice President: majority of electors, else the Senate chooses from the two highest, with quorum of two thirds and majority of the whole Senate	A
+A12_4	Amendment XII	no person constitutionally ineligible for President is eligible for Vice President	A
+A12_5	Amendment XII	acting-President clause for failure of House choice (superseded by Amendment XX, s. 3)	D
+A13_s1	Amendment XIII, s. 1	neither slavery nor involuntary servitude, except as punishment for crime after conviction	A
+A13_s2	Amendment XIII, s. 2	Congress has power to enforce the article by appropriate legislation	A
+A14_s1_cit	Amendment XIV, s. 1	persons born or naturalized in the United States and subject to its jurisdiction are citizens of the United States and of their State of residence	A
+A14_s1_priv	Amendment XIV, s. 1	no State shall abridge the privileges or immunities of citizens of the United States	A
+A14_s1_dp	Amendment XIV, s. 1	no State shall deprive any person of life, liberty, or property without due process of law	A
+A14_s1_ep	Amendment XIV, s. 1	no State shall deny any person the equal protection of the laws	A
+A14_s2_basis	Amendment XIV, s. 2	Representatives apportioned by the whole number of persons in each State, excluding untaxed Indians	S
+A14_s2_reduce	Amendment XIV, s. 2	basis reduced in proportion when male citizens twenty-one years of age are denied the vote, except for rebellion or other crime	A
+A14_s3	Amendment XIV, s. 3	no person who swore to support the Constitution and then engaged in insurrection may hold office, unless two thirds of each House removes the disability	A
+A14_s4_debt	Amendment XIV, s. 4	validity of public debt authorized by law shall not be questioned	A
+A14_s4_rebel	Amendment XIV, s. 4	neither the United States nor any State assumes debts in aid of rebellion or claims for emancipated slaves	A
+A14_s5	Amendment XIV, s. 5	Congress has power to enforce the article by appropriate legislation	A
+A15_s1	Amendment XV, s. 1	right to vote not denied or abridged on account of race, color, or previous condition of servitude	A
+A15_s2	Amendment XV, s. 2	Congress has power to enforce the article by appropriate legislation	A
+A16_1	Amendment XVI	Congress may lay and collect taxes on incomes without apportionment among the States	A
+A17_s1	Amendment XVII, s. 1	Senators chosen by the people for six years, one vote each; electors have the qualifications of the most numerous State legislative branch	A
+A17_s2	Amendment XVII, s. 2	Senate vacancies filled by writs of election, or by temporary appointment if the legislature so empowers	A
+A17_s3	Amendment XVII, s. 3	the amendment does not affect a Senator chosen before it became valid	S
+A18_s1	Amendment XVIII, s. 1	prohibition of manufacture, sale and transport of intoxicating liquors (repealed by Amendment XXI)	D
+A18_s2	Amendment XVIII, s. 2	concurrent enforcement power (repealed)	D
+A18_s3	Amendment XVIII, s. 3	seven-year ratification limit (repealed)	D
+A19_s1	Amendment XIX, s. 1	right to vote not denied or abridged on account of sex	A
+A19_s2	Amendment XIX	Congress has power to enforce the article by appropriate legislation	A
+A20_s1	Amendment XX, s. 1	terms of President and Vice President end at noon on 20 January; of Senators and Representatives at noon on 3 January	S
+A20_s2	Amendment XX, s. 2	Congress assembles at least once a year, beginning at noon on 3 January unless it appoints another day by law	S
+A20_s3	Amendment XX, s. 3	death of a President-elect or failure to qualify: the Vice President-elect becomes or acts as President; Congress provides by law for neither qualifying	A
+A20_s4	Amendment XX, s. 4	Congress may provide by law for the death of persons from whom the House or the Senate may choose a President or Vice President	A
+A20_s5	Amendment XX, s. 5	sections 1 and 2 take effect on 15 October after ratification	S
+A20_s6	Amendment XX, s. 6	seven-year ratification limit	S
+A21_s1	Amendment XXI, s. 1	the Eighteenth Amendment is repealed	S
+A21_s2	Amendment XXI, s. 2	transport or importation of intoxicating liquor into a State in violation of its laws is prohibited	A
+A21_s3	Amendment XXI, s. 3	ratification by conventions within seven years	S
+A22_s1	Amendment XXII, s. 1	no person elected President more than twice, nor one who held the office for more than two years of another's term more than once; grandfather exemption	A
+A22_s2	Amendment XXII, s. 2	seven-year ratification limit	S
+A23_s1	Amendment XXIII, s. 1	District of Columbia appoints electors, additional to the States', not exceeding the least populous State's number	A
+A23_s2	Amendment XXIII, s. 2	Congress has power to enforce the article by appropriate legislation	A
+A24_s1	Amendment XXIV, s. 1	right to vote in federal elections not denied for failure to pay a poll tax or other tax	A
+A24_s2	Amendment XXIV, s. 2	Congress has power to enforce the article by appropriate legislation	A
+A25_s1	Amendment XXV, s. 1	Vice President becomes President on removal, death or resignation of the President	A
+A25_s2	Amendment XXV, s. 2	on a Vice Presidential vacancy the President nominates a Vice President, confirmed by a majority of both Houses	A
+A25_s3	Amendment XXV, s. 3	on the President's written declaration of inability, the Vice President acts until the President declares otherwise	A
+A25_s4_a	Amendment XXV, s. 4	on the Vice President and a majority of the principal officers (or other body) declaring inability, the Vice President acts immediately	A
+A25_s4_b	Amendment XXV, s. 4	President's declaration of no inability resumes power unless contested within four days; Congress decides within twenty-one days, assembling within forty-eight hours if needed	A
+A25_s4_c	Amendment XXV, s. 4	Congress's determination of inability requires two thirds of both Houses; otherwise the President resumes power	A
+A26_s1	Amendment XXVI, s. 1	right to vote of citizens eighteen years of age or older not denied or abridged on account of age	A
+A26_s2	Amendment XXVI, s. 2	Congress has power to enforce the article by appropriate legislation	A
+A27_s1	Amendment XXVII	law varying the compensation of Senators and Representatives takes effect only after an intervening election of Representatives	A

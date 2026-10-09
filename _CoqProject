@@ -1,0 +1,21 @@
+-Q theories CV
+
+theories/Types.v
+theories/Act.v
+theories/Data.v
+theories/World.v
+theories/Preamble.v
+theories/Art1_Congress.v
+theories/Art1_Lawmaking.v
+theories/Art1_Limits.v
+theories/Art2.v
+theories/Art3.v
+theories/Art4.v
+theories/Art5_7.v
+theories/Amend_BoR.v
+theories/Amend_11_19.v
+theories/Amend_20_27.v
+theories/Constitutional.v
+theories/Witness.v
+theories/WitnessCheck.v
+Constitution.v
